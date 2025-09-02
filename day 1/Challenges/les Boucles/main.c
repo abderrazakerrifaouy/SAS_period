@@ -95,29 +95,47 @@
 
 //challenge 8
 
-int fibonacci(int n){
-    if(n == 0){
-        return 0 ;
-    } else if (n == 1)
-    {
-        return 1 ;
-    }else if (n > 1)
-    {
-        return fibonacci(n-1) + fibonacci(n - 2);
-    }else
-    {
-        return -1 ;
-    }
+// int fibonacci(int n){
+//     if(n == 0){
+//         return 0 ;
+//     } else if (n == 1)
+//     {
+//         return 1 ;
+//     }else if (n > 1)
+//     {
+//         return fibonacci(n-1) + fibonacci(n - 2);
+//     }else
+//     {
+//         return -1 ;
+//     }
      
-}
+// }
 
 
+// int main(){
+//     int f ;
+//     printf(" entier le nombre ; ");
+//     scanf("%d",&f);
+//     int fi = fibonacci(f);
+//     printf("f(%d) = %d ",f ,fi);
+// }
+
+// chalenge 9
 int main(){
-    int f ;
-    printf(" entier le nombre ; ");
-    scanf("%d",&f);
-    int fi = fibonacci(f);
-    printf("f(%d) = %d ",f ,fi);
+    int n ;
+    int c = 0 ;
+    scanf("%d",&n);
+    do
+    {
+        int r = n/10 ;
+        if (r<0)
+        {
+           
+        }
+        
+
+    } while ();
+    
 }
 
 
