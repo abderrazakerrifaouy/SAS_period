@@ -38,17 +38,17 @@
 //challenge 4 
 
 // int main(){
-//     int nPremiers = 0 ; 
+//     int nImpairs = 0 ; 
 //     int nscane ;
 //     int i = 1 ;
 //     printf("inter your number ; ");
 //     scanf("%d",&nscane);
-//     while (nPremiers < nscane)
+//     while (nImpairs < nscane)
 //     {
 //        if (i%2 != 0)
 //        {
 //         printf("%d",i);
-//         nPremiers++ ;
+//         nImpairs++ ;
 //        }
 //        i++ ;
        
@@ -72,3 +72,52 @@
 //     printf("%d",resulte);
     
 // }
+
+//challenge 6
+
+// int main(){
+    // int nPair = 0 ; 
+    // int nscane ;
+    // int i = 1 ;
+    // printf("inter your number ; ");
+    // scanf("%d",&nscane);
+    // while (nPair < nscane)
+    // {
+    //    if (i%2 == 0)
+    //    {
+    //     printf("%d ,\t",i);
+    //     nPair++ ;
+    //    }
+    //    i++ ;
+       
+    // }
+// }
+
+//challenge 8
+
+int fibonacci(int n){
+    if(n == 0){
+        return 0 ;
+    } else if (n == 1)
+    {
+        return 1 ;
+    }else if (n > 1)
+    {
+        return fibonacci(n-1) + fibonacci(n - 2);
+    }else
+    {
+        return -1 ;
+    }
+     
+}
+
+
+int main(){
+    int f ;
+    printf(" entier le nombre ; ");
+    scanf("%d",&f);
+    int fi = fibonacci(f);
+    printf("f(%d) = %d ",f ,fi);
+}
+
+
