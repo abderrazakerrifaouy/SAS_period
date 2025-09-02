@@ -120,22 +120,35 @@
 //     printf("f(%d) = %d ",f ,fi);
 // }
 
-// chalenge 9
-int main(){
-    int n ;
-    int c = 0 ;
-    scanf("%d",&n);
-    do
-    {
-        int r = n/10 ;
-        if (r<0)
-        {
-           
-        }
-        
+// challenge 9
 
-    } while ();
+
+// int main(){
+//     int n ;
+//     int c = 0 ;
     
-}
+//     scanf("%d",&n);
+//     do
+//     {
+//         int r = n/10 ;
+//         n = r ; 
+        
+//         c++ ;
 
+//     } while (n > 0);
+//     printf("%d",c);
+    
+// }
 
+//challenge 10
+
+// int main(){
+//      int number ;
+//      int  somme = 0 ;
+//      printf("inter your namber : ");
+//      scanf("%d",&number);
+//      for( int i = 0 ; i <= number ; i++){
+//         somme = somme + i ;
+//      }
+//      printf("somme = %d ", somme);
+// }
