@@ -133,7 +133,7 @@ int main()
             printf("Quel est le titre de livre ; ");
             scanf("%s", le_titres);
             int is = -1;
-            
+
             for (int i = 0; i < nLiver; i++)
             {
                 if (strcmp(le_titres, titre[i]) == 0)
@@ -142,7 +142,7 @@ int main()
                     break;
                 }
             }
-            
+
             for (int j = is; j < nLiver; j++)
             {
                 strcpy(titre[j], titre[j + 1]);
@@ -154,14 +154,12 @@ int main()
             break;
         case 6:
 
-        int somme = 0 ;
-        for (int i = 0; i < nLiver; i++) 
-        {
-        somme =+ quantite[i] ;
-      
-            
-        }
-        
+            int somme = 0;
+            for (int i = 0; i < nLiver; i++)
+            {
+                somme = +quantite[i];
+            }
+
             printf(" Le nombre total de livres en stock ==> %d \n", somme);
             break;
         default:
