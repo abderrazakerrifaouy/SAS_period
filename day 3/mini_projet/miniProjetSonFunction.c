@@ -177,7 +177,16 @@ int main()
             nLiver--;
             break;
         case 6:
-            printf(" Le nombre total de livres en stock ==> %d \n", nLiver);
+
+        int somme = 0 ;
+        for (int i = 0; i < nLiver; i++) 
+        {
+        somme =+ quantite[i] ;
+      
+            
+        }
+        
+            printf(" Le nombre total de livres en stock ==> %d \n", somme);
             break;
         default:
             break;
