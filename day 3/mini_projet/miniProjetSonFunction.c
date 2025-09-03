@@ -10,30 +10,6 @@ int nLiver = 0;
 char name[10];
 int age;
 
-void afficherLivre(int i)
-{
-    if (i >= 0)
-    {
-        printf("le liver %d ==> \n\tle Titre = %s , \n\tle auteur = %s , \n\tle prix = %2lf , \n\tle quantite = %d", i + 1, titre[i], auteur[i], prix[i], quantite[i]);
-    }
-    else
-    {
-        printf("this titel is note correct");
-    }
-}
-
-int Rechercher(char t[50])
-{
-    for (int i = 0; i < nLiver; i++)
-    {
-        if (strcmp(t, titre[i]) == 0)
-        {
-            return i;
-        }
-    }
-    return -1;
-}
-
 int main()
 {
     int y = 0;
