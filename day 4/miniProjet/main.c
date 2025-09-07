@@ -155,25 +155,18 @@ int valideEmail(char email[50])
 
 int validePhonNmper(char nPhone[50])
 {
-    // Vérifier longueur exacte = 10
     if (strlen(nPhone) != 10)
     {
         return 0;
     }
-
-    // Vérifier que le premier caractère est '0'
     if (nPhone[0] != '0')
     {
         return 0;
     }
-
-    // Vérifier que le deuxième caractère est '6' ou '7'
     if (nPhone[1] != '6' && nPhone[1] != '7')
     {
         return 0;
     }
-
-    // Vérifier que tous les caractères sont des chiffres
     for (int i = 0; i < 10; i++)
     {
         if (nPhone[i] < '0' || nPhone[i] > '9')
@@ -181,8 +174,7 @@ int validePhonNmper(char nPhone[50])
             return 0;
         }
     }
-
-    return 1; // valide
+    return 1; 
 }
 
 
