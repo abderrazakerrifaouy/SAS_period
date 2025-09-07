@@ -166,10 +166,7 @@ int validePhonNmper(char nPhone[50])
             return 0;
         }
     }
-    if (!nPhone[1] == '6' && !nPhone[1] == '7')
-    {
-        return 0;
-    }
+    
     return 1;
 }
 
