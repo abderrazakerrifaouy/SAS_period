@@ -313,7 +313,7 @@ void afficher_tous_les_contacts()
         for (int i = 0; i < conteur; i++)
         {
             printf("                    ||                        ||                        ||                                ||                        ||\n");
-            printf("                    || contact %-*d || %-*s || %-*s || %-*s ||\n", 14, i, 22, contacts[i].nom, 30, contacts[i].numero_de_telephone, 22, contacts[i].adresse_e_mail);
+            printf("                    || contact %-*d || %-*s || %-*s || %-*s ||\n", 14, i+1 , 22, contacts[i].nom, 30, contacts[i].numero_de_telephone, 22, contacts[i].adresse_e_mail);
             printf("                    ||                        ||                        ||                                ||                        ||\n");
         }
         printf("                    +************************+**************************************************************************************+\n" RESET);
