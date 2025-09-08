@@ -71,7 +71,7 @@ int main()
             }
             else
             {
-                printf("this nom is not corect");
+                printf("ce nom n'est pas correct ");
             }
             getchar();
             printf("\nAppuyez sur Entrer pour continuer...");
@@ -88,7 +88,7 @@ int main()
             }
             else
             {
-                printf("this nom is not corect");
+                printf("ce nom n'est pas correct");
             }
             break;
         case 5:
@@ -100,7 +100,7 @@ int main()
             {
                 afficher_le_contact(index);
                 char conf;
-                printf(RED "you are delete the contact (y/n) ; " RESET);
+                printf(RED " vous supprimez le contact (y/n) ; " RESET);
                 scanf(" %c", &conf);
                 if (conf == 'n' || conf == 'N')
                 {
@@ -115,7 +115,7 @@ int main()
             }
             else
             {
-                printf("this nom is not corect");
+                printf("ce nom n'est pas correct");
             }
             getchar();
             printf("\nAppuyez sur Entrer pour continuer...");
@@ -174,9 +174,8 @@ int validePhonNmper(char nPhone[50])
             return 0;
         }
     }
-    return 1; 
+    return 1;
 }
-
 
 void ajouter()
 {
@@ -195,7 +194,7 @@ void ajouter()
         if (!validePhonNmper(contacts[conteur].numero_de_telephone))
         {
             printf(GREEN "                          |");
-            printf(RED "     the phone number is note corect " RESET);
+            printf(RED "     le numéro de téléphone n'est pas correct " RESET);
             printf(GREEN "            |   \n");
         }
     } while (!validePhonNmper(contacts[conteur].numero_de_telephone));
@@ -210,7 +209,7 @@ void ajouter()
         if (!check)
         {
             printf(GREEN "                          |");
-            printf(RED "    the email adrress is note corect " RESET);
+            printf(RED "    l'adresse e-mail n'est pas correcte " RESET);
             printf(GREEN "            |   \n");
         }
 
@@ -262,7 +261,7 @@ void Modifier(int index_contact)
                 scanf("%s", contacts[index_contact].numero_de_telephone);
                 if (!validePhonNmper(contacts[index_contact].numero_de_telephone))
                 {
-                    printf(RED " the phone number is note corect \n" RESET);
+                    printf(RED "le numéro de téléphone n'est pas correct \n" RESET);
                 }
             } while (!validePhonNmper(contacts[index_contact].numero_de_telephone));
 
@@ -279,7 +278,7 @@ void Modifier(int index_contact)
                 check = valideEmail(contacts[index_contact].adresse_e_mail);
                 if (!check)
                 {
-                    printf(RED " the email adrress is note corect \n" RESET);
+                    printf(RED " l'adresse e-mail n'est pas correcte \n" RESET);
                 }
 
             } while (!check);
