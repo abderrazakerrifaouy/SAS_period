@@ -83,32 +83,14 @@ int main()
     }
 
     int T2[tay * 2];
+   int T2[tay * 2];
     for (int i = 0; i < tay; i++)
     {
-        
         T2[i] = T[i];
     }
-
-    
-    int check = 1 ;
     for (int i = tay; i < tay * 2; i++)
     {
-        for (int i = 0; i < tay; i++)
-        {
-            if (T[i] == T1[i])
-            {
-                check = 0 ;
-            }
-            if (check)
-            {
-                T2[i] = T1[i - tay];
-            }
-            
-            
-        }
-        
-
-        
+        T2[i] = T1[i - tay];
     }
 
     printf("max = %d ", max(T2, tay * 2));
