@@ -40,19 +40,14 @@ int somme(int T[], int tay)
 void order(int T[], int tay)
 {
     
-    for (int i = 0; i < tay; i++)
-    {
-        for (int j = i+1; j < tay; j++)
-        {
-           if (T[i] > T[j])
-           {
-            T[i] = T[i] + T[j];
-            T[j] = T[i] - T[j];
-            T[i] = T[i] - T[j];
-           }
-           
+    for (int i = 0; i < tay; i++) {
+        for (int j = i + 1; j < tay; j++) {
+            if (T[i] > T[j]) {
+                int temp = T[i];
+                T[i] = T[j];
+                T[j] = temp;
+            }
         }
-        
     }
     
 }
@@ -90,11 +85,30 @@ int main()
     int T2[tay * 2];
     for (int i = 0; i < tay; i++)
     {
+        
         T2[i] = T[i];
     }
+
+    
+    int check = 1 ;
     for (int i = tay; i < tay * 2; i++)
     {
-        T2[i] = T1[i - tay];
+        for (int i = 0; i < tay; i++)
+        {
+            if (T[i] == T1[i])
+            {
+                check = 0 ;
+            }
+            if (check)
+            {
+                T2[i] = T1[i - tay];
+            }
+            
+            
+        }
+        
+
+        
     }
 
     printf("max = %d ", max(T2, tay * 2));
@@ -103,6 +117,8 @@ int main()
 
     printf("min = %d ", somme(T2, tay * 2));
 
+    order(T2 , tay*2);
+    
     for (int i = 0; i < tay*2; i++)
     {
         printf("%d \n",T2[i]);
