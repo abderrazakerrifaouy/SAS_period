@@ -79,12 +79,12 @@ int main()
     for (int i = 0; i < tay; i++)
     {
         printf("T1 case %d", i);
-        scanf("%d", T[i]);
+        scanf("%d",&T[i]);
     }
     for (int i = 0; i < tay; i++)
     {
         printf("T1 case %d", i);
-        scanf("%d", T1[i]);
+        scanf("%d",&T1[i]);
     }
 
     int T2[tay * 2];
